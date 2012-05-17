@@ -1,0 +1,4 @@
+ofxOpenCv
+ofxKinect
+ofxKinectBlobFinder
+ofxKinectBlobTracker

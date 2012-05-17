@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="../../ofxKinect/src/ofxKinect.h" open="0" top="0" tabpos="0">
+		<Cursor position="6166" topLine="168" />
+	</File>
+	<File name="../../ofxKinectBlobFinder/src/ofxKinectBlobFinder.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="7179" topLine="0" />
+	</File>
+	<File name="../../ofxKinectBlobFinder/src/ofxKinectBlobFinder.h" open="1" top="0" tabpos="4">
+		<Cursor position="1575" topLine="39" />
+	</File>
+	<File name="src/main.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="120" topLine="0" />
+	</File>
+	<File name="src/testApp.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="4806" topLine="123" />
+	</File>
+	<File name="src/testApp.h" open="1" top="0" tabpos="2">
+		<Cursor position="1162" topLine="29" />
+	</File>
+</CodeBlocks_layout_file>

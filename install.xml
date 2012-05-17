@@ -1,0 +1,31 @@
+<install>
+
+	<version>0.01</version>
+	<author>David Sanz Kirbis</author>
+	<url></url>
+	
+    	<requires>
+		<addon>ofxKinect</addon>
+		<addon>ofxKinectBlobFinder</addon>
+	</requires>
+    		
+	<add>	
+		<src>
+			<folder name="addons/ofxKinectBlobTracker/src">			
+				<file>../../../addons/ofxKinectBlobTracker/src/ofxKinectTrackedBlob.h</file>
+				<file>../../../addons/ofxKinectBlobTracker/src/ofxKinectTrackingConstants.h</file>
+				<file>../../../addons/ofxKinectBlobTracker/src/ofxKinectBlobTracker.h</file>
+				<file>../../../addons/ofxKinectBlobTracker/src/ofxKinectBlobTracker.cpp</file>
+			</folder>
+		</src>
+
+		<include>
+			<path>../../../addons/ofxKinectBlobTracker/src</path>
+		</include>
+		
+		<link>
+		</link>
+
+	</add>
+	
+</install>
