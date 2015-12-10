@@ -3,6 +3,8 @@ ofxKinectBlobTracker
 
 3D blob tracker to be used with ofxKinectBlobFinder. Based on ofxCvTracker by stefanix.
 
+Watch it in action here: https://www.youtube.com/watch?v=uwvYgiwrTwU
+
 Comments:
 
 Part of the cvCinema project: www.cvcinema.com
