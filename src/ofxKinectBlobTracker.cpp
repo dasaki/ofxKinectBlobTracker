@@ -22,7 +22,7 @@ ofxKinectBlobTracker::ofxKinectBlobTracker() {
 	extraIDs = 0;
 	rejectDistThresh = DEFAULT_REJECT_DISTANCE_THRESHOLD;
 	minDisplacementThresh = DEFAULT_MINIMUM_DISPLACEMENT_THRESHOLD;
-	ghost_frames = DEFAULT_GHOST_FRAMES;
+	numGhostFrames = DEFAULT_GHOST_FRAMES;
 }
 
 
@@ -59,10 +59,34 @@ int ofxKinectBlobTracker::getIndexById( int id ) {
 	return -1;
 }
 
+
+float ofxKinectBlobTracker::getRejectDistThresh() {
+    return rejectDistThresh;
+}
+
+unsigned int ofxKinectBlobTracker::getNumGhostFrames(){
+    return numGhostFrames;
+}
+
+float ofxKinectBlobTracker::getMinDisplacementThresh(){
+    return minDisplacementThresh;
+}
+
+void ofxKinectBlobTracker::setRejectDistThresh(float newValue) {
+    rejectDistThresh = newValue;
+}
+
+void ofxKinectBlobTracker::setNumGhostFrames(unsigned int  newValue) {
+    numGhostFrames = newValue;
+}
+
+void ofxKinectBlobTracker::setMinDisplacementThresh(float newValue) {
+    minDisplacementThresh = newValue;
+}
+    
+    
+
 void ofxKinectBlobTracker::getTrajectoryById( int id, vector <ofVec3f> &trajectory) {
-
-
-
     for (unsigned int i=0; i<MAX_HISTORY_LEN; i++ ) {
         unsigned int j;
         for( j=0; j < history[i].size(); j++ ) {
@@ -313,7 +337,7 @@ void ofxKinectBlobTracker::trackBlobs( const vector<ofxKinectBlob>& _blobs) {
 		}
 
 		if( !found ) {
-			if( ghost_frames == 0 )	{
+			if( numGhostFrames == 0 )	{
 				//doUntouchEvent((*prev)[i].getTouchData());
                 doBlobOff( (*prev)[i] );
 
@@ -328,7 +352,7 @@ void ofxKinectBlobTracker::trackBlobs( const vector<ofxKinectBlob>& _blobs) {
                 }
 			} else {
 				(*prev)[i].markedForDeletion = true;
-				(*prev)[i].framesLeft = ghost_frames;
+				(*prev)[i].framesLeft = numGhostFrames;
 				blobs.push_back( (*prev)[i] );  // keep it around
                                                 // until framesleft = 0
 			}
@@ -353,7 +377,7 @@ ofVec3f ofxKinectBlobTracker::findVelocity(unsigned int index) {
                     break;
                 }
             }
-            if (i < history[1].size()) ofVec3f velocity = blobs[index].massCenter - oldMassCenter;
+            if (i < history[1].size()) velocity = blobs[index].massCenter - oldMassCenter;
      }
     return velocity;
 }
@@ -375,7 +399,7 @@ ofVec3f ofxKinectBlobTracker::findVelocityById(int id) {
                     break;
                 }
             }
-            if (i < history[1].size()) ofVec3f velocity = blobs[index].massCenter - oldMassCenter;
+            if (i < history[1].size()) velocity = blobs[index].massCenter - oldMassCenter;
          }
      }
 

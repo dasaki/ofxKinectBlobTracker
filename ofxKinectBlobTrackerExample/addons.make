@@ -2,3 +2,4 @@ ofxOpenCv
 ofxKinect
 ofxKinectBlobFinder
 ofxKinectBlobTracker
+ofxGui

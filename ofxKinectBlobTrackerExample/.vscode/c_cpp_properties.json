@@ -1,0 +1,150 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "/usr/local/include/cairo",
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/",
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/4.2.1",
+                "${workspaceRoot}/../../../libs/openFrameworks",
+                "${workspaceRoot}/../../../libs/openFrameworks/3d",
+                "${workspaceRoot}/../../../libs/openFrameworks/app",
+                "${workspaceRoot}/../../../libs/openFrameworks/communication",
+                "${workspaceRoot}/../../../libs/openFrameworks/events",
+                "${workspaceRoot}/../../../libs/openFrameworks/gl",
+                "${workspaceRoot}/../../../libs/openFrameworks/graphics",
+                "${workspaceRoot}/../../../libs/openFrameworks/math",
+                "${workspaceRoot}/../../../libs/openFrameworks/sound",
+                "${workspaceRoot}/../../../libs/openFrameworks/types",
+                "${workspaceRoot}/../../../libs/openFrameworks/utils",
+                "${workspaceRoot}/../../../libs/openFrameworks/video",
+                "${workspaceRoot}/../../../libs/boost/include",
+                "${workspaceRoot}/../../../libs/cairo/include",
+                "${workspaceRoot}/../../../libs/curl/include",
+                "${workspaceRoot}/../../../libs/fmodex/include",
+                "${workspaceRoot}/../../../libs/FreeImage/include",
+                "${workspaceRoot}/../../../libs/freetype/include",
+                "${workspaceRoot}/../../../libs/glew/include",
+                "${workspaceRoot}/../../../libs/glfw/include",
+                "${workspaceRoot}/../../../libs/glm/include",
+                "${workspaceRoot}/../../../libs/json/include",
+                "${workspaceRoot}/../../../libs/pugixml/include",
+                "${workspaceRoot}/../../../libs/rtAudio/include",
+                "${workspaceRoot}/../../../libs/tess2/include",
+                "${workspaceRoot}/../../../libs/uriparser/include",
+                "${workspaceRoot}/../../../libs/utf8/include",
+                "${workspaceRoot}/../../../addons/ofxGui/src",
+                "${workspaceRoot}/../../../addons/ofxCv/src",
+                "${workspaceRoot}/../../../addons/ofxCv/libs/ofxCv/include",
+                "${workspaceRoot}/../../../addons/ofxCv/libs/CLD/include",
+                "${workspaceRoot}/../../../addons/ofxCv/libs/CLD/include/CLD",
+                "${workspaceRoot}/../../../addons/ofxOsc/src",
+                "${workspaceRoot}/../../../addons/ofxOsc/libs/oscpack/src/osc",
+                "${workspaceRoot}/../../../addons/ofxOsc/libs/oscpack/src/ip",
+                "/System/Library/Frameworks/CoreServices.framework/Versions/Current/Frameworks",
+                "/System/Library/Frameworks/ApplicationServices.framework/Versions/Current/Frameworks"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "${workspaceRoot}/.vscode/browse.db",
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "/usr/local/include/cairo",
+                    "/System/Library/Frameworks",
+                    "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/",
+                    "${workspaceRoot}/../../../libs",
+                    "${workspaceRoot}/../../../addons",
+                    "${workspaceRoot}/../../../addons/ofxOsc/libs",
+                    "${workspaceRoot}/../../../libs/openFrameworks"
+                ]
+            },
+            "intelliSenseMode": "clang-x64",
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ]
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "/usr/include/c++/9",
+                "/usr/include/c++/9/backward",
+                "/usr/lib/gcc/x86_64-linux-gnu/9/include",
+                "/usr/lib/x86_64-linux-gnu/glib-2.0/include",
+                "/usr/include/gstreamer-1.0/gst",
+                "${workspaceRoot}/../../../libs/openFrameworks",
+                "${workspaceRoot}/../../../libs/openFrameworks/3d",
+                "${workspaceRoot}/../../../libs/openFrameworks/app",
+                "${workspaceRoot}/../../../libs/openFrameworks/communication",
+                "${workspaceRoot}/../../../libs/openFrameworks/events",
+                "${workspaceRoot}/../../../libs/openFrameworks/gl",
+                "${workspaceRoot}/../../../libs/openFrameworks/graphics",
+                "${workspaceRoot}/../../../libs/openFrameworks/math",
+                "${workspaceRoot}/../../../libs/openFrameworks/sound",
+                "${workspaceRoot}/../../../libs/openFrameworks/types",
+                "${workspaceRoot}/../../../libs/openFrameworks/utils",
+                "${workspaceRoot}/../../../libs/openFrameworks/video",
+                "${workspaceRoot}/../../../libs/boost/include",
+                "${workspaceRoot}/../../../libs/cairo/include",
+                "${workspaceRoot}/../../../libs/curl/include",
+                "${workspaceRoot}/../../../libs/fmodex/include",
+                "${workspaceRoot}/../../../libs/FreeImage/include",
+                "${workspaceRoot}/../../../libs/freetype/include",
+                "${workspaceRoot}/../../../libs/glew/include",
+                "${workspaceRoot}/../../../libs/glfw/include",
+                "${workspaceRoot}/../../../libs/glm/include",
+                "${workspaceRoot}/../../../libs/json/include",
+                "${workspaceRoot}/../../../libs/pugixml/include",
+                "${workspaceRoot}/../../../libs/rtAudio/include",
+                "${workspaceRoot}/../../../libs/tess2/include",
+                "${workspaceRoot}/../../../libs/uriparser/include",
+                "${workspaceRoot}/../../../libs/utf8/include",
+                "${workspaceRoot}/../../../libs/poco/include",
+                "${workspaceRoot}/../../../libs/kiss/include",
+                "/usr/include/pulse",
+                "/usr/include/cairo",
+                "/usr/include/gstreamer-1.0",
+                "/usr/include/glib-2.0",
+                "${workspaceRoot}",
+                "${workspaceFolder}"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "",
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "/usr/lib",
+                    "${workspaceRoot}/../../../libs/openFrameworks",
+                    "${workspaceRoot}",
+                    "${workspaceFolder}",
+                    "${workspaceRoot}/../../../addons"
+                ]
+            },
+            "intelliSenseMode": "clang-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "",
+                "path": [
+                    "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*"
+                ]
+            },
+            "intelliSenseMode": "msvc-x64"
+        }
+    ],
+    "version": 4
+}

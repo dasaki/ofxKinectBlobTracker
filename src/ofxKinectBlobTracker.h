@@ -47,6 +47,14 @@ class ofxKinectBlobTracker {
     ofVec3f findVelocityById( int id );
 
 
+    float getRejectDistThresh();
+    unsigned int getNumGhostFrames();
+    float getMinDisplacementThresh();
+
+    void setRejectDistThresh(float newValue);
+    void setNumGhostFrames(unsigned int  newValue);
+    void setMinDisplacementThresh(float newValue);
+    
   protected:
 
     int currentID;
@@ -56,7 +64,7 @@ class ofxKinectBlobTracker {
     ofxKinectBlobListener* listener;
 
     float rejectDistThresh;
-    int ghost_frames;
+    int numGhostFrames;
     float minDisplacementThresh;
 
     vector<vector<int> > matrix;
